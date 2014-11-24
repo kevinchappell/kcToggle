@@ -1,13 +1,12 @@
 # kcToggle
-========
 
 Replace default browser checkboxes with this themable jQuery plugin.
 
 ## Install
 In your html document simply add the following to your `<head>`. *kcToggle* is jQuery dependant so be sure to have a copy of jQuery 1.6+ loaded before including the plugin files in your document's `<head>`.
 ```
-  <link   href="../kcToggle.css"  media="all" rel="stylesheet" type="text/css" />
-  <script src="../kcToggle.js"    type="text/javascript" ></script>
+<link href="../kcToggle.css" media="all" rel="stylesheet" type="text/css" />
+<script src="../kcToggle.js" type="text/javascript" ></script>
 ```
 
 ## Usage
@@ -21,3 +20,6 @@ var labels = {
     };
 $('input[kcToggle]').kcToggle(labels);
 ```
+
+## Example
+![kcToggle](https://raw.githubusercontent.com/kevinchappell/kcToggle/master/example/example.png)

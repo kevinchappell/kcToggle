@@ -61,4 +61,10 @@
     });
   };
 
+$('input[kcToggle]').kcToggle({
+    text: {
+    off: 'No',
+    on: 'Yes'
+  }});
+
 })(jQuery);

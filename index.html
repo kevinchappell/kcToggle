@@ -7,6 +7,14 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link href="kcToggle.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="kcToggle.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('input[kcToggle]').kcToggle();
+    });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,6 +25,10 @@
       <header>
         <h1>kcToggle</h1>
         <p>Replace default browser checkboxes with this customizable jQuery plugin</p>
+
+        <h2><a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+        <p><input type="checkbox" value="Yes" kcToggle></p>
 
         <p class="view"><a href="https://github.com/kevinchappell/kcToggle">View the Project on GitHub <small>kevinchappell/kcToggle</small></a></p>
 
@@ -51,10 +63,6 @@
 $('input[kcToggle]').kcToggle(labels);
 </code></pre>
 
-<h2>
-<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
-
-<p><img src="https://raw.githubusercontent.com/kevinchappell/kcToggle/master/example/example.png" alt="kcToggle"></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/kevinchappell">kevinchappell</a></p>

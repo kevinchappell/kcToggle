@@ -22,4 +22,5 @@ $('input[kcToggle]').kcToggle(labels);
 ```
 
 ## Example
-![kcToggle](https://raw.githubusercontent.com/kevinchappell/kcToggle/master/example/example.png)
+[![kcToggle](https://raw.githubusercontent.com/kevinchappell/kcToggle/master/example/example.png)](http://kevinchappell.github.io/kcToggle/)
+

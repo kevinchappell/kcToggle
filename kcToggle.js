@@ -1,12 +1,14 @@
 /**
  * kcToggle
  * Description: Replace the default browser checkbox with a styled toggle
- * Version: .1
+ * Version: .1.2
  * Author: Kevin Chappell
  * Dependencies: jQuery Core v1.6+
  */
 
 (function($) {
+  'use strict';
+
   var Toggle = function(element, options) {
 
     var defaults = {
@@ -52,19 +54,14 @@
       }
       var kcToggle = new Toggle(this, options);
       element.data('kcToggle', kcToggle);
-
-      if ($.browser.msie && parseInt($.browser.version, 10) < 9) {
-        // custom styling for old IE
-        var ie_style = '<style type="text/css"></style>';
-        element.after(ie_style);
-      }
     });
   };
 
-$('input[kcToggle]').kcToggle({
+  $('input[kcToggle]').kcToggle({
     text: {
-    off: 'No',
-    on: 'Yes'
-  }});
+      off: 'No',
+      on: 'Yes'
+    }
+  });
 
 })(jQuery);
